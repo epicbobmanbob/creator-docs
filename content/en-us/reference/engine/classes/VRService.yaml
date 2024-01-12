@@ -246,8 +246,9 @@ methods:
       This can also be used alongside the several `Class.UserInputService` VR
       functions and events.
 
-      Since `Class.VRService` only runs client-side, this function will only
-      work when used in a `Class.LocalScript`.
+      Since this service is client-side only, this function will only
+      work when used in a `Class.LocalScript` or a `Class.Script` with
+      `Class.Script.RunContext|RunContext` of `Enum.RunContext|Client`.
     code_samples:
       - VRService-GetUserCFrameEnabled
     parameters:
@@ -280,7 +281,7 @@ methods:
       This is similar to the `Class.UserInputService` function,
       `Class.UserInputService:RecenterUserHeadCFrame()`.
 
-      Since `VRServiceService` only runs client-side, this function will only
+      Since `Class.VRService` only runs client-side, this function will only
       work when used in a `Class.LocalScript`.
     code_samples:
       - VRService-RecenterUserHeadCFrame
